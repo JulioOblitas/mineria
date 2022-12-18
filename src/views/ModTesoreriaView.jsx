@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";    
 import { Link } from "react-router-dom";    
-import Swal from "sweetalert2";
+
 import { useNavigate } from "react-router-dom";
 import "../estilos/modalmacen.css";
 import { Navbar, Container, Nav,   NavDropdown, Button, Form } from "react-bootstrap";  

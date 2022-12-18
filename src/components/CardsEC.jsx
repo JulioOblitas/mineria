@@ -1,6 +1,6 @@
 
 import Card from 'react-bootstrap/Card';
-import Swal from 'sweetalert2'
+
 import { Link } from 'react-router-dom';
 
 import "../estilos/cardecomerce.css";
@@ -193,11 +193,7 @@ export default function CardsEC({ productos , alquiler }) {
 ]*/
 const Mensaje   =  () =>{
         
-  Swal.fire(
-    'ESANYS',
-    'Email: ventas@esanys.pe => 954 451 473 => HILDA SURICHAQUI',            
-    'success'      
-  )
+  
 
 }
 

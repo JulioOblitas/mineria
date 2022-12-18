@@ -1,5 +1,5 @@
 
-import Swal from 'sweetalert2'
+
 import { useState, useRef  } from 'react'; 
 import { Navbar, Container, Nav,   NavDropdown, Button, Form } from "react-bootstrap";  
 import { useParams, useNavigate } from "react-router";
@@ -78,11 +78,6 @@ export default function NavBar() {
     e.preventDefault();
     console.log(datos);
     if(datos.user_telefono =="" || datos.user_name =="" || datos.user_email =="" || datos.user_message  == "" ){
-      Swal.fire(
-        'INKA',
-        'Complete datos',            
-        'success'      
-      )          
       return;
     }
     
@@ -324,11 +319,6 @@ const [alquiler, setAlquiler] = useState(false)
   
 const Mensaje   =  () =>{
     {/*setModalShow(true)*/}
-    Swal.fire(
-      'INKAS',
-      'Email: ventas@esanys.pe => 954 451 473  => HILDA SURICHAQUI',            
-      'success'      
-    )
   
 }
 
