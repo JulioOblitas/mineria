@@ -1,0 +1,78 @@
+
+.navbar {
+    
+    background-image: radial-gradient(circle at 26.15% 45.8%, #188fff 0, #1d8aff 16.67%, #1c32fc 33.33%, #1927ee 50%, #000fdf 66.67%, #0000d3 83.33%, #0007cc 100%);
+
+  }
+ 
+  .navbar-light .navbar-nav .nav-link {
+  color: rgb(243, 243, 245);
+}
+.titulo {
+
+  color: #fffafa !important;
+  font-weight:bolder;
+  font-size: 28px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.titulocontacto {
+
+  color: #fffafa !important;
+  font-weight:bolder;
+  background-color:red;
+  
+
+}
+
+
+
+
+.navbar-light .navbar-toggler-icon {
+  background-color: aliceblue;
+}
+
+.txtbuscar{
+ width: 250px;
+ 
+}
+.btn-buscar {
+  width: 60px;
+ 
+}
+
+.contenedorbuscar{
+
+background-color: aqua;
+margin-right: 80px;
+}
+
+
+
+.btn-opciones {
+  width: 100px;
+
+}
+
+.anchotextomodal{
+  margin-left: 15px;
+  width: 320px;
+  text-transform:uppercase;
+}
+.labelmodal{
+  margin-left: 15px;
+ 
+}
+.modal-title {
+  color: #188fff;
+  font-weight: bold;;
+}
+.modal-dialog{
+  width: 340px;
+}
+input:focus,textarea:focus {
+  border:3px;
+  border-color: rgb(0, 13, 255);
+  box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(0, 21, 255, 0.6);
+  outline: 0 none;
+  }

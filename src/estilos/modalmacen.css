@@ -1,0 +1,26 @@
+.contenedor{
+    width: 1360px;
+    height: 800px;
+    background-color:aliceblue;
+    margin-top: -70px;
+}
+.contenedorcheckoutbotones{    
+    width: 545px;    
+    margin-left: 1px;    
+    position: relative;     
+    display: flex ;
+    flex-direction: row;
+    justify-content: space-between;    
+}
+
+.textomayus{
+    text-transform:uppercase
+}
+.titulo{
+    color: white;
+}
+.datadicbtn{
+    width: 180px; 
+    margin-left: 85px;     
+    
+}
