@@ -16,7 +16,7 @@ export default function ModMinasView() {
         <div className="contenedor">
         <Nav className="me-auto">
 
-             <NavDropdown title="MINAS" id="collasible-nav-dropdown" className="me-4">
+             <NavDropdown title="MINA AMBIENTAL" id="collasible-nav-dropdown" className="me-4">
               <NavDropdown.Item >UBIGEO</NavDropdown.Item>
               <NavDropdown.Item >ACOPIADORES</NavDropdown.Item>
               <NavDropdown.Divider />

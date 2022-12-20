@@ -380,7 +380,7 @@ const Filtro   =  (e, cat, tipo) =>{
             {/*<Nav.Link href="#features">INICIO</Nav.Link>*/}
             {/*<Nav.Link onClick={(e) => {Filtro(e,0,0)}}>INICIO</Nav.Link>*/}
             <NavDropdown title="MINERA" id="collasible-nav-dropdown" className="me-4">         
-              <NavDropdown.Item onClick={ejecutarModMinas}>MINAS</NavDropdown.Item>
+              <NavDropdown.Item onClick={ejecutarModMinas}>PRODUCCION AMBIENTAL</NavDropdown.Item>
               
               
               
