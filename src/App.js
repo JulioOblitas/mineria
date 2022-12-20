@@ -16,7 +16,8 @@ import ModTesoreriaView from "./views/ModTesoreriaView";
 import ModContabilidadView from "./views/ModContabilidadView";
 import ModPlanillaView from "./views/ModPlanillaView";
 import ModGestionView from "./views/ModGestionView";
-import ModMinasView from "./views/ModMinasView";
+
+import ModAcopamientoView from "./views/ModAcopamientoView";
 
 function App() {
   
@@ -36,7 +37,7 @@ function App() {
               <Route  path="modtesoreria" element={<ModTesoreriaView  />}/>  
               <Route  path="modplanilla" element={<ModPlanillaView  />}/>  
               <Route  path="modGestion" element={<ModGestionView  />}/>  
-              <Route  path="modminas" element={<ModMinasView   />}/>  
+              <Route  path="modacopamiento" element={<ModAcopamientoView   />}/>  
         </Routes>}
           
       </Router>

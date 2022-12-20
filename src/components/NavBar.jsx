@@ -49,9 +49,18 @@ export default function NavBar() {
     navigate("/modgestion");
    };
 
-   const ejecutarModMinas = () => {        
-    navigate("/modminas");
+   const ejecutarAcopamiento = () => {        
+    navigate("/modacopamiento");    
    };
+
+   const ejecutarControlAmbiente = () => {        
+    navigate("/modacopamiento");    
+   };
+   const ejecutarComercializacion = () => {        
+    navigate("/modcomercializacion");    
+   };
+
+              
 
  
   
@@ -373,14 +382,16 @@ const Filtro   =  (e, cat, tipo) =>{
     <Navbar   bg="light" expand="md" className="navbar mb-2" fixed="top">
       
       <Container fluid>
-      <Navbar.Brand  className='titulo'  >INKAS</Navbar.Brand>
+      <Navbar.Brand  className='titulo'  ></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             {/*<Nav.Link href="#features">INICIO</Nav.Link>*/}
             {/*<Nav.Link onClick={(e) => {Filtro(e,0,0)}}>INICIO</Nav.Link>*/}
             <NavDropdown title="MINERA" id="collasible-nav-dropdown" className="me-4">         
-              <NavDropdown.Item onClick={ejecutarModMinas}>PRODUCCION AMBIENTAL</NavDropdown.Item>
+              <NavDropdown.Item onClick={ejecutarAcopamiento}>ACOPAMIENTO MINERALES</NavDropdown.Item>
+              <NavDropdown.Item onClick={ejecutarControlAmbiente}>CONTROL AMBIENTE RELAVES</NavDropdown.Item>
+              <NavDropdown.Item onClick={ejecutarComercializacion}>COMERCIALIZACION MINERAL</NavDropdown.Item>
               
               
               
