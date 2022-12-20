@@ -54,7 +54,7 @@ export default function NavBar() {
    };
 
    const ejecutarControlAmbiente = () => {        
-    navigate("/modacopamiento");    
+    navigate("/modcontrolambiente");    
    };
    const ejecutarComercializacion = () => {        
     navigate("/modcomercializacion");    
@@ -398,27 +398,13 @@ const Filtro   =  (e, cat, tipo) =>{
             </NavDropdown>
 
 
-            <NavDropdown title="MODULOS" id="collasible-nav-dropdown" className="me-4">
-              <NavDropdown.Item onClick={ejecutarModAlmacen}>ALMACEN</NavDropdown.Item>
-              <NavDropdown.Item onClick={ejecutarModCompras}>COMPRAS</NavDropdown.Item>
-              <NavDropdown.Item  onClick={ejecutarModProduccion}>PRODUCCION</NavDropdown.Item>
-              <NavDropdown.Item onClick={ejecutarModVentas}>VENTAS</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item onClick={ejecutarModContabilidad}>CONTABILIDAD</NavDropdown.Item>
-              <NavDropdown.Item onClick={ejecutarModTesoreria}>TESORERIA</NavDropdown.Item>
-              
-              <NavDropdown.Item onClick={ejecutarModPlanilla}>PLANILLA</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item onClick={ejecutarModGestion}>GESTION</NavDropdown.Item>
-              
-            </NavDropdown>
-
+            
             
             {/*<Nav.Link variant='success' className='titulocontacto me-auto' onClick={(e) => {Mensaje(e)}}> CONTACTO</Nav.Link>*/}
         <Nav.Link variant='success' className='titulocontacto me-auto' onClick={handleShow}> CONTACTO</Nav.Link>
             <Modal className='modaldialog' show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>INKAS - CONTACTO</Modal.Title>
+          <Modal.Title>CONTACTO</Modal.Title>
         </Modal.Header>
           
           <form ref={form} onSubmit={sendEmail} >                

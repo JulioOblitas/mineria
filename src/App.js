@@ -18,6 +18,8 @@ import ModPlanillaView from "./views/ModPlanillaView";
 import ModGestionView from "./views/ModGestionView";
 
 import ModAcopamientoView from "./views/ModAcopamientoView";
+import ModControlAmbienteView from "./views/ModControlAmbienteView";
+import ModComercializacionView from "./views/ModComercializacionView";
 
 function App() {
   
@@ -38,6 +40,8 @@ function App() {
               <Route  path="modplanilla" element={<ModPlanillaView  />}/>  
               <Route  path="modGestion" element={<ModGestionView  />}/>  
               <Route  path="modacopamiento" element={<ModAcopamientoView   />}/>  
+              <Route  path="modcontrolambiente" element={<ModControlAmbienteView   />}/>  
+              <Route  path="modcomercializacion" element={<ModComercializacionView   />}/>  
         </Routes>}
           
       </Router>
