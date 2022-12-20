@@ -49,6 +49,9 @@ export default function NavBar() {
     navigate("/modgestion");
    };
 
+   const ejecutarModMinas = () => {        
+    navigate("/modminas");
+   };
 
  
   
@@ -91,10 +94,10 @@ export default function NavBar() {
     user_message:""})
   }
   
-  const  img1 = 'assets/imagenes/principalslider.jpg'
-  const  img2 = 'assets/imagenes/mina1slider.jpg'
-  const  img3 = 'assets/imagenes/minaoroslider.jpg'
-  const  img4 = 'assets/imagenes/minacobreslider.jpeg'
+  const  img1 = 'assets/imagenes/principalmineriasostenible.jpg'
+  const  img2 = 'assets/imagenes/mineriaconfuturo.jpg'
+  const  img3 = 'assets/imagenes/sostenibilidadescalada.jpg'
+  const  img4 = 'assets/imagenes/mineria-amigable.jpg'
   const images = [
 		{
 			id: '1',
@@ -376,6 +379,14 @@ const Filtro   =  (e, cat, tipo) =>{
           <Nav className="me-auto">
             {/*<Nav.Link href="#features">INICIO</Nav.Link>*/}
             {/*<Nav.Link onClick={(e) => {Filtro(e,0,0)}}>INICIO</Nav.Link>*/}
+            <NavDropdown title="MINERA" id="collasible-nav-dropdown" className="me-4">         
+              <NavDropdown.Item onClick={ejecutarModMinas}>MINAS</NavDropdown.Item>
+              
+              
+              
+            </NavDropdown>
+
+
             <NavDropdown title="MODULOS" id="collasible-nav-dropdown" className="me-4">
               <NavDropdown.Item onClick={ejecutarModAlmacen}>ALMACEN</NavDropdown.Item>
               <NavDropdown.Item onClick={ejecutarModCompras}>COMPRAS</NavDropdown.Item>
@@ -391,13 +402,6 @@ const Filtro   =  (e, cat, tipo) =>{
               
             </NavDropdown>
 
-            <NavDropdown title="MINERIA" id="collasible-nav-dropdown" className="me-4">         
-            <NavDropdown.Item onClick={(e) => {Filtro(e,1,1)}}>UBIGEO MINAS</NavDropdown.Item>
-              <NavDropdown.Item onClick={(e) => {Filtro(e,2,1)}}>CONTROL RELAVES</NavDropdown.Item>
-              
-              
-              
-            </NavDropdown>
             
             {/*<Nav.Link variant='success' className='titulocontacto me-auto' onClick={(e) => {Mensaje(e)}}> CONTACTO</Nav.Link>*/}
         <Nav.Link variant='success' className='titulocontacto me-auto' onClick={handleShow}> CONTACTO</Nav.Link>
@@ -464,16 +468,14 @@ const Filtro   =  (e, cat, tipo) =>{
 					{/*</a>*/}
           	<img style={{ height:'55.5rem' }} src={img1} alt=""/>
 					
-					<TextoSlide colorFondo="navy">
-						<p className='tituloslider'>BIENVENIDOS A INKAS</p>
-					</TextoSlide>
+					
 				</Slide>
 				<Slide>
 					
 						<img style={{ height:'55.5rem' }} src={img2} alt=""/>
 					
 					<TextoSlide>
-						<p className='tituloslider' >PRODUCCION</p>
+						<p className='tituloslider' >ECOLOGIA</p>
 					</TextoSlide>
 				</Slide>
         <Slide>
@@ -481,7 +483,7 @@ const Filtro   =  (e, cat, tipo) =>{
 						<img style={{ height:'55.5rem' }} src={img3} alt=""/>
 					
 					<TextoSlide>
-						<p className='tituloslider' >ORO</p>
+						<p className='tituloslider' >SOSTENIBILIDAD</p>
 					</TextoSlide>
 				</Slide>
         <Slide>
@@ -489,7 +491,7 @@ const Filtro   =  (e, cat, tipo) =>{
 						<img style={{ height:'55.5rem' }} src={img4} alt=""/>
 					
 					<TextoSlide>
-						<p className='tituloslider'>COBRE</p>
+						<p className='tituloslider'>PROTECCION AMBIENTAL</p>
 					</TextoSlide>
 				</Slide>
 			</Slideshow>
